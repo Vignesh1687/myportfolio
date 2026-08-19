@@ -65,6 +65,7 @@ export const projects: Project[] = [
       "Backend-connected product architecture",
     ],
     href: "https://college-hr.vercel.app",
+    image: "/College HR Management System.png",
     gradient: "from-[#243B72] via-[#17254A] to-[#070A14]",
     accent: "#6D8CFF",
   },
