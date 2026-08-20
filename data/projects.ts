@@ -24,7 +24,7 @@ export const projects: Project[] = [
     description:
       "A full-stack platform to streamline college event management, registration, and administration.",
     longDescription:
-      "Built a production-grade event management system with role-based authentication, real-time room allocation, OD letter automation, and analytics dashboards. Designed for actual use at SRM IST.",
+      "Developed a full-stack smart event management system with role-based authentication, event registration, participation tracking, room allocation, OD letter automation, PDF reports, and analytics dashboards.",
     tech: [
       "React.js",
       "TypeScript",
@@ -70,8 +70,28 @@ export const projects: Project[] = [
     accent: "#6D8CFF",
   },
   {
-    id: "ai-ml-experiments",
+    id: "capp-module",
     index: "03",
+    title: "Development of a CAPP Module for Machining of Prismatic Components",
+    category: "Machine Learning · CAD/CAM · Process Planning",
+    year: "2024 – Present",
+    description:
+      "A DRDO-certified Computer-Aided Process Planning module that recognizes features from AutoCAD DXF files and generates CNC code.",
+    longDescription:
+      "Developed during the DRDO-CVRDE internship under Scientist 'E'. The system extracts geometry from AutoCAD DXF files, converts features to structured text, validates the process, and generates G-code and M-code for CNC machining.",
+    tech: ["Python", "AutoCAD DXF", "Pandas", "NumPy", "pytest", "Git", "G-code", "M-code"],
+    highlights: [
+      "Feature-based recognition for prismatic components",
+      "DXF geometry extraction and structured text conversion",
+      "Validated G-code and M-code generation",
+      "Unit testing, automated testing, and QA checks",
+    ],
+    gradient: "from-[#0C6B68] via-[#123C4A] to-[#071416]",
+    accent: "#43D6B5",
+  },
+  {
+    id: "ai-ml-experiments",
+    index: "04",
     title: "AI/ML Experiments & Models",
     category: "Machine Learning · Self-Directed",
     year: "2025",

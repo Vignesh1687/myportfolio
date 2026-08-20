@@ -3,8 +3,7 @@
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { experiences, education } from "@/data/experience";
-import { education as _e } from "@/data/experience";
+import { experiences, education, credentials } from "@/data/experience";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -67,6 +66,29 @@ export default function Experience() {
               </div>
               <div className="font-mono text-2xl text-accent mt-1">{education.cgpa}</div>
             </div>
+          </div>
+          <div className="mt-6 grid md:grid-cols-2 gap-4 border-t border-border pt-5 text-sm text-ink-muted">
+            {education.earlier.map((item) => (
+              <div key={item.institution} className="flex justify-between gap-4">
+                <span><strong className="text-ink">{item.institution}</strong><br />{item.qualification}</span>
+                <span className="font-mono text-xs text-right whitespace-nowrap">{item.period}<br />{item.result}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div className="exp-item mb-12 grid md:grid-cols-2 gap-6 p-6 lg:p-8 border border-border rounded-2xl bg-bg-surface/50">
+          <div>
+            <div className="section-num mb-3">Credentials & Skills</div>
+            <h3 className="font-display text-xl md:text-2xl">Beyond the timeline</h3>
+          </div>
+          <div className="space-y-4 text-sm text-ink-muted">
+            <p><strong className="text-ink">Certifications:</strong> {credentials.certifications.join(" · ")}</p>
+            <p><strong className="text-ink">Volunteering:</strong> {credentials.volunteering}</p>
+            <p><strong className="text-ink">Workshop:</strong> {credentials.workshop}</p>
+            <p><strong className="text-ink">NCC:</strong> {credentials.extracurricular}</p>
+            <p><strong className="text-ink">Skills:</strong> {credentials.skills}</p>
+            <p><strong className="text-ink">Languages:</strong> {credentials.languages}</p>
           </div>
         </div>
 

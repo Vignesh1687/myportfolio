@@ -5,7 +5,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { profile } from "@/data/profile";
 import ContactForm from "./ContactForm";
-import { Mail, MapPin, Sparkles } from "lucide-react";
+import { Mail, MapPin, Phone, Sparkles } from "lucide-react";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -63,9 +63,18 @@ export default function Contact() {
               </div>
               <div>
                 <div className="flex items-center gap-2 text-ink-dim text-xs font-mono uppercase tracking-widest mb-1">
+                  <Phone className="w-3 h-3" /> Phone
+                </div>
+                <a href={`tel:${profile.phone}`} className="link-hover text-lg md:text-xl" data-cursor="link">
+                  {profile.phone}
+                </a>
+              </div>
+              <div>
+                <div className="flex items-center gap-2 text-ink-dim text-xs font-mono uppercase tracking-widest mb-1">
                   <MapPin className="w-3 h-3" /> Location
                 </div>
                 <p className="text-lg md:text-xl">{profile.location}</p>
+                <p className="text-ink-dim text-sm mt-1 leading-relaxed">{profile.address}</p>
               </div>
               <div>
                 <div className="flex items-center gap-2 text-ink-dim text-xs font-mono uppercase tracking-widest mb-1">

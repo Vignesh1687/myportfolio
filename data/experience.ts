@@ -17,7 +17,7 @@ export const experiences: ExperienceItem[] = [
     role: "Project Intern",
     organization: "DRDO – Combat Vehicles Research & Development Establishment (CVRDE)",
     type: "Research Internship",
-    period: "Dec 2024 – Jan 2025",
+    period: "Dec 2024 – Present",
     location: "Avadi, Chennai, Tamil Nadu",
     description:
       "Worked on a Computer-Aided Process Planning (CAPP) module for machining prismatic components using feature-based recognition. Guided by Scientist 'E' at DRDO-CVRDE.",
@@ -32,7 +32,7 @@ export const experiences: ExperienceItem[] = [
     id: "self-learning",
     index: "02",
     role: "Self-Directed Learner & Open-Source Explorer",
-    organization: "Google · AWS Academy · Personal Projects",
+    organization: "Google · Personal Projects",
     type: "Continuous Learning",
     period: "2024 – Present",
     location: "Remote",
@@ -41,7 +41,6 @@ export const experiences: ExperienceItem[] = [
     achievements: [
       "Android Developer Virtual Internship — Google (Sept 2025). Built apps in Kotlin/Java with Android Studio, MVVM, REST APIs, SQLite & Firebase.",
       "AI-ML Virtual Internship — Google (Jun 2025). Hands-on with Python, TensorFlow, preprocessing, and supervised/unsupervised learning.",
-      "AWS Cloud Virtual Internship (Oct–Dec 2024). 10-week program covering AWS services, cloud architecture, networking, storage, and deployment.",
       "Continuously ship personal projects across React, TypeScript, Python, and modern web stacks.",
     ],
   },
@@ -68,4 +67,20 @@ export const education = {
   degree: "B.Tech in Computer Science and Engineering",
   period: "2023 – 2027",
   cgpa: "8.74 / 10",
+  earlier: [
+    { institution: "Dr Junior College", qualification: "Class XII · State Board · MPC", period: "2023", result: "56%" },
+    { institution: "Chaitanya High School", qualification: "Class X · State Board", period: "2021", result: "94%" },
+  ],
+};
+
+export const credentials = {
+  certifications: [
+    "Android Developer Virtual Internship · Google · Sept 2025",
+    "AI-ML Virtual Internship · Google · Jun 2025",
+  ],
+  volunteering: "IDE Bootcamp – Edition 2, Phase I · AICTE & Ministry of Education’s Innovation Cell · Sept 2024",
+  workshop: "REAL ASCEND Workshop · PSG Institute of Technology and Applied Research · Mar 2024",
+  extracurricular: "NCC A, B & C · Current",
+  skills: "Python, JavaScript, C++, HTML, CSS, SQL, React, TypeScript, Git, GitHub, VS Code, AutoCAD, G-code, M-code",
+  languages: "English, Hindi, Telugu, Tamil · Professional Working Proficiency",
 };
